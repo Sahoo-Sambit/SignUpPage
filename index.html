@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body{
+            background-color: #000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            background-color: #fff;
+            color: #000;
+            width: 25vw;
+            height: 98vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
+            line-height: 7vh;
+            font-size: 25px;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            line-height: 40px;
+            font-size: 22px;
+        }
+        #input{
+            height: 40px;
+            font-size: 18px;
+        }
+        .input-button{
+            margin-top: 40px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+        label,input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <label for="name">Name:</label>
+        <input type="text" class="input-text">
+        <label for="batch">Batch:</label>
+        <select name="course" id="input">
+            <option value="0" class="opt">Sigma 2.0</option>
+            <option value="1" class="opt">Sigma 1.0</option>
+        </select>
+        <label for="age">Age:</label>
+        <input type="number" min="10" max="60" class="input-text">
+        <label for="email">Email:</label>
+        <input type="email" class="input-text">
+        <label for="password">Password:</label>
+        <input type="password" class="input-text">
+        <input type="button" value="Signup" class="input-button">
+    </div>
+</body>
+</html>
